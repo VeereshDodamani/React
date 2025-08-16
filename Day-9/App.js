@@ -14,7 +14,7 @@ let name = "Veeresh";
 const element = <h1>Hello, {name}</h1>;
 console.log(element)
 function App() {
-  const [mode, setmode] = useState('dark')
+  const [mode, setmode] = useState('white')
 
   const toggleMode =() => {
     if (mode === 'dark'){
