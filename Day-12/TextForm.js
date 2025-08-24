@@ -54,19 +54,19 @@ export default function TextForm(props) {
             rows="8"
           ></textarea>
         </div>
-        <button className="btn btn-primary mx-2 my-2" onClick={handelUpClick}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handelUpClick}>
           Submit for UPPERCASE
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={handelLowerClick}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handelLowerClick}>
           Submit for lowercase
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={handelInverseText}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={handelInverseText}>
           Submit for Reverse Text
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={speak}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={speak}>
           Submit for Speech
         </button>
-        <button className="btn btn-primary mx-2 my-2" onClick={clearText}>
+        <button disabled={text.length===0} className="btn btn-primary mx-2 my-2" onClick={clearText}>
           Submit to clear text
         </button>
       </div>
