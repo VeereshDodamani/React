@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 function About(props) {
   const [myStyle, setMyStyle] = useState({
-    color: props.mode === "dark" ? "white" : "#042743",
+    color: props.mode === "dark" ? "white" : "grey",
     backgroundColor: props.mode === "dark" ? "rgb(36 74 104)" : "white",
     border: "2px solid",
-    borderColor: props.mode === "dark"?"white": "#042743"
+    borderColor: props.mode === "dark"?"white": "grey"
   });
 
   const [btntext, setbtntext] = useState("Enable Dark Mode");
@@ -20,7 +20,7 @@ function About(props) {
     } else {
       setMyStyle({
         color: "white",
-        backgroundColor: "black",
+        backgroundColor: "grey",
         border: "0.5px solid white",
       });
       setbtntext("Enable Light Mode");
